@@ -214,7 +214,6 @@ button {
   font-size: 14px;
   margin: 0 0 8px;
   line-height: 150%;
-  font-weight: ;
 }
 .post-card .body-text {
   font-size: 12px;
@@ -356,7 +355,6 @@ h4 {
   padding: 28px 0;
   font-size: 14px;
   font-weight: 600;
-  color: var(--ink-soft);
   width: 100%;
 }
 .load-more-icon { font-size: 20px; }

@@ -1,166 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>Discussions</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summative: New Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href= "css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/script.js"></script>
+
+</head>
 
 <body>
 
-<div class="app">
-
-
-  <header class="feed-header">
+<!-- NAVIGATION -->
+<header>
     
-    <div class="welcome-row">
-      <img class="user maya" src="assets/maya.jpeg" alt="Maya" />
-      <h1>Hi Maya!</h1>
-      <button class="search-btn" type="button"><img src="assets/icon-search.png"></button>
-    </div>
+<nav class="primary-navigation">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Weekly-blogs.html">Weekly Blogs</a></li>
+    <li><a href="https://www.figma.com/board/z3wOsbk76FEHQPbV9ZVfDG/patricia-liao-bmd2id2-new-enterprise?node-id=388-3591&t=pHV986Z0xbC7UizN-1" target="_blank"
+   rel="noopener noreferrer">The Figjam</a></li>
+    <li><a href="#">Final Work</a></li>
+</ul>
+</nav>
+<img class="menu-icon" src="assets/menu-svgrepo-com.svg"  alt="menu" onclick="openMenu()">
 
-    <div class="nav-pills">
-      <button class="nav-pill" type="button">Product Verdicts</button>
-      <button class="nav-pill nav-pill--active" type="button">Discussions</button>
-    </div>
+<!-- MOBILE MENU -->
 
-  </header>
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
+<nav class="side-menu" id="sideMenu">
+  <button class="close-btn" onclick="closeMenu()">✕</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Weekly-blogs.html">Weekly Blogs</a></li>
+    <li><a href="https://www.figma.com/board/z3wOsbk76FEHQPbV9ZVfDG/patricia-liao-bmd2id2-new-enterprise?node-id=388-3591&t=pHV986Z0xbC7UizN-1" target="_blank"
+   rel="noopener noreferrer">The Figjam</a></li>
+    <li><a href="#">Final Work</a></li>
+  </ul>
+</nav>
 
+<!-- MOBILE MENU -->
 
-  <main class="feed-main">
-    <h1>Community topics</h1>
+</header>
+<!-- NAVIGATION -->
 
-    <div class="chip-row">
-      <button class="chip chip--active" type="button">All x </button>
-      <button class="chip" type="button">Is it worth it</button>
-      <button class="chip" type="button">Need opinions</button>
-      <button class="chip" type="button">Girl News</button>
-      <button class="chip" type="button">Red flag</button>
-      <button class="chip" type="button">Regret Purchase</button>
-      <button class="chip" type="button">Money talks</button>
-      <button class="chip" type="button">Girl Math</button>
-      <button class="chip" type="button">Pink tax alert</button>
-    </div>
+<section class="hero">
 
-
-    
-    <div class="feed">
-
-      <!-- Post 1 -->
-      <article class="post-card">
-        <div class="post-card-header">
-          <img class="user" src="assets/user1.jpeg"/>
-          <div class="meta">
-            <span class="handle">@lulupdf</span>
-            <span class="time">10 mins ago</span>
-          </div>
-          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
-        </div>
-
-        <h4 class="post-title">Are stainless steel razors really worth the hype?</h4>
-        <p class="body-text">
-          I keep seeing girls say switching to stainless steel razors saves more money long term and . . .
-        </p>
-        <span class="tag-pill">Is it worth it?</span>
-
-
-        <div class="action-row">
-          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
-          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
-        </div>
-
-        <button class="see-replies" type="button">See replies (103) ...</button>
-
-      </article>
-
-      <!-- Post 2 -->
-      <article class="post-card">
-        <div class="post-card-header">
-          <img class="user" src="assets/user2.jpeg"/>
-          <div class="meta">
-            <span class="handle">@kylafinnegan</span>
-            <span class="time"> 1 hour ago</span>
-          </div>
-          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
-        </div>
-
-          
-        
-        <h4>"If it comes from my treats account, it doesn't count.</h4>
-        <p class="body-text">
-          Lowkey my best budgeting decision was making a separate account just for little treats and. . .
-        </p>
-        <span class="tag-pill">Girl Math</span>
-
-        <div class="action-row">
-          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
-          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
-        </div>
-
-        <button class="see-replies" type="button">See replies (103) ...</button>
-      </article>
-
-      <!-- Article card -->
-      <article class="article-card">
-        <img src="assets/pink-tax.jpg" alt="">
-        <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
-        <div class="article-content">
-          <h4>The 'Pink Tax': How It's Costing Us Women TENS Of THOUSANDS of Dollars... Each!</h4>
-          <span class="read-more">Read more ↗</span>
-        </div>
-      </article>
-
-      <!-- Post 3 -->
-      <article class="post-card">
-        <div class="post-card-header">
-          <img class="user" src="assets/user2.jpeg"/>
-          <div class="meta">
-            <span class="handle">@kylafinnegan</span>
-            <span class="time"> 1 hour ago</span>
-          </div>
-          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
-        </div>
-        
-        <h4>Brands Doing It Right</h4>
-        <p class="body-text">
-          I went down a bit of a rabbit hole recently and found out that Billie was actually built around fighting the pink tax. I thought they were just known for their razors, but their whole brand is centred on fair pricing and calling out how women's products are often marked up. I've tried them myself and it's nice seeing a company actually talk about this stuff instead of pretending it doesn't exist.
-        </p>
-        <span class="tag-pill">Pink Tax</span>
-        
-        <div class="post-images">
-          <img src="assets/billie (1).png" alt="" />
-          <img src="assets/billie (2).png" alt="" />
-          <img src="assets/billie (3).png" alt="" />
-          <img src="assets/billie (4).png" alt="" />
-        </div>
-        <div class="action-row">
-          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
-          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
-          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
-        </div>
-        <button class="see-replies" type="button">See replies (103) ...</button>
-      </article>
-
-    </div>
-
-    <button class="load-more" type="button">
-      <span class="load-more-icon">⟳</span>
-      <span>Load more posts</span>
-    </button>
-  </main>
-
+<div class="heading">
+    <h3>Summative 1:</h3>
+    <h1>New Enterprise</h1>
+    <h3>Year 2 Term 2</h3>
 </div>
+
+<div class="buttonss">
+    <button><a class="primary-button" href="Week 1.html">See Weekly Blogs</a></button>
+    <button><a class="secondary-button" href="Week 1.html">See Final Work</a></button>
+</div>
+</section>
+<div>
+
+
+
+<section class="welcome">
+  <div class="welcome-text">
+    <h2>Welcome to my Retrospective Blog!</h2>
+    <div class="welcome-card">
+      <p class="brief-content">Hey, welcome to my retrospective blog!
+This space is where I've documented the ups, downs, wins, struggles, and everything in between while working on my summative project this term. You'll find weekly blog posts covering my progress, reflections, and the decisions that helped shape the project along the way.
+Feel free to have a look around! You can explore the project brief, browse through each week's retrospective, dive into my FigJam documentation, or jump straight to the final project showcase.
+Thanks for visiting, and happy exploring :)</p>
+    </div>
+  </div>
+  <img class="welcome-photo" src="assets/ME 1.png">
+</section>
+
+<section class = "the-brief">
+
+<div class="brief-container">
+    <h1>The Brief</h1>
+    <div class="brief-content">
+        <p>As a recent graduate, you decide to put your design skills toward setting up a new social enterprise in the city you live in. You have the opportunity to conceptualize the scope of this business and the product or service this startup offers, using a human-centered design approach.</p>
+        <p>Areas of inquiry to consider: improved social equity; sustainability; healthy communities; affordability; food
+        security; education; accessibility; arts and culture; civic participation.
+        </p>
+        <p>Your designed solution must relate to an identified present day, real problem and consider an appropriate target market carefully. Using UX research and methodologies, you will create a brand, an appropriate MVP digital product as well as a media strategy to launch your product or service.</p>
+    </div>
+</div>
+
+
+</section>
+
+
+<section class="weekly-blogs">
+  <div class="blog-container">
+    <h1>The Blogs</h1>
+    <div class="blog-thumbnails">
+
+      <a href="blog-template.html?week=1" class="blog-indi">
+        <img src="assets/pink-tax.jpg" alt="Week 1">
+        <h4>Week 1: Topic & Problem Research</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+
+      <a href="blog-template.html?week=2" class="blog-indi">
+        <img src="assets/girlss.jpeg" alt="Week 2">
+        <h4>Week 2: TALK TO ME: The Interview Arc</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+      <a href="blog-template.html?week=3" class="blog-indi">
+        <img src="assets/angela-meyer.webp" alt="Week 1">
+        <h4>Week 3: GIRL TALK: It Was Never About The Product</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+
+      <a href="blog-template.html?week=4" class="blog-indi">
+        <img src="assets/week-4-hero.jpg" alt="Week 2">
+        <h4>Week 4: THE PROPOSAL: 50 Slides Later</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+      <a href="blog-template.html?week=5" class="blog-indi">
+        <img src="assets/week-5-hero.jpg" alt="Week 1">
+        <h4>Week 5: THIS IS FINE: Productive Procrastination</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+
+      <a href="blog-template.html?week=6" class="blog-indi">
+        <img src="assets/week-6-hero.jpg" alt="Week 2">
+        <h4>Week 6: WIPLASH: Not quite my tempo</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+      <a href="blog-template.html?week=7" class="blog-indi">
+        <img src="assets/week-7-hero.jpg" alt="Week 1">
+        <h4>Week 7: Week seveeeeen</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+
+      <a href="blog-template.html?week=8" class="blog-indi">
+        <img src="assets/under-construction.jpg" alt="Week 2">
+        <h4>Week 8: Title Here</h4>
+        <span class="readmore">Read more →</span>
+      </a>
+
+
+    </div>
+  </div>
+</section>
+
+<footer>
+    <h1>Patricia Liao</h1>
+
+</footer>
 
 </body>
 </html>
