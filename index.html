@@ -1,157 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bfor App</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sidebar — Pick a Side. Settle It.</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Discussions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href= "css/style.css">
 </head>
+
+
 <body>
-<div class="wrap">
 
-  <!-- NAV -->
-  <nav>
-    <span class="mono brand">Sidebar</span>
-    <span class="mono">Get the app →</span>
-  </nav>
+<div class="app">
 
-  <!-- HERO -->
-  <section class="hero">
-    <span class="eyebrow">Debate · Vote · Compare</span>
-    <h1 class="display">Pick a<br>side. <span>See</span><br>who agrees.</h1>
-    <p>Swipe through real debates, cast your verdict in one tap, and find out what your votes say about you.</p>
-    <div class="cta-row">
-      <a href="#" class="btn" aria-label="Download on the App Store">Download · iOS</a>
-      <a href="#" class="btn ghost" aria-label="Get it on Google Play">Download · Android</a>
+
+  <header class="feed-header">
+    
+    <div class="welcome-row">
+      <img class="user maya" src="assets/maya.jpeg" alt="Maya" />
+      <h1>Hi Maya!</h1>
+      <button class="search-btn" type="button"><img src="assets/icon-search.png"></button>
     </div>
 
-    <div class="phone-mock" aria-hidden="true">
-      <div class="screen">
-        <span class="vs-pill">Round 412</span>
-        <p class="q">Is pineapple on pizza actually a crime?</p>
-        <span class="vs-pill" style="background:var(--pink-deep)">Swipe to vote</span>
-        <span class="swipe-hint">← guilty &nbsp;&nbsp; not guilty →</span>
-      </div>
+    <div class="nav-pills">
+      <button class="nav-pill" type="button">Product Verdicts</button>
+      <button class="nav-pill nav-pill--active" type="button">Discussions</button>
     </div>
-  </section>
 
-  <!-- WELCOME / INTRO -->
-  <section class="section-yellow">
-    <h2 class="display">Welcome to the<br>debate floor.</h2>
-    <p class="body-text">Every day, thousands of strangers post the arguments they can't settle at home — and the internet decides. No accounts full of followers, no algorithm picking winners. Just the question, both sides, and your vote.</p>
-  </section>
+  </header>
 
-  <!-- THE BRIEF -->
-  <section class="section-cream">
-    <h2 class="display">The<br>Brief.</h2>
-    <div class="steps">
-      <div class="step">
-        <span class="num mono">01</span>
-        <div>
-          <h3>Watch a real disagreement</h3>
-          <p>Scroll a feed of short clips — couples, roommates, coworkers — laying out both sides of something they can't agree on.</p>
+
+
+  <main class="feed-main">
+    <h1>Community topics</h1>
+
+    <div class="chip-row">
+      <button class="chip chip--active" type="button">All x </button>
+      <button class="chip" type="button">Is it worth it</button>
+      <button class="chip" type="button">Need opinions</button>
+      <button class="chip" type="button">Girl News</button>
+      <button class="chip" type="button">Red flag</button>
+      <button class="chip" type="button">Regret Purchase</button>
+      <button class="chip" type="button">Money talks</button>
+      <button class="chip" type="button">Girl Math</button>
+      <button class="chip" type="button">Pink tax alert</button>
+    </div>
+
+
+    
+    <div class="feed">
+
+      <!-- Post 1 -->
+      <article class="post-card">
+        <div class="post-card-header">
+          <img class="user" src="assets/user1.jpeg"/>
+          <div class="meta">
+            <span class="handle">@lulupdf</span>
+            <span class="time">10 mins ago</span>
+          </div>
+          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
         </div>
-      </div>
-      <div class="step">
-        <span class="num mono">02</span>
-        <div>
-          <h3>Cast your verdict</h3>
-          <p>Slide to pick a side. Watch the live vote shift in real time as the rest of the room weighs in behind you.</p>
+
+        <h4 class="post-title">Are stainless steel razors really worth the hype?</h4>
+        <p class="body-text">
+          I keep seeing girls say switching to stainless steel razors saves more money long term and . . .
+        </p>
+        <span class="tag-pill">Is it worth it?</span>
+
+
+        <div class="action-row">
+          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
+          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
         </div>
-      </div>
-      <div class="step">
-        <span class="num mono">03</span>
-        <div>
-          <h3>Find your people</h3>
-          <p>Your voting pattern builds a profile — your debate style, your blind spots, and the friends who vote exactly like you.</p>
+
+        <button class="see-replies" type="button">See replies (103) ...</button>
+
+      </article>
+
+      <!-- Post 2 -->
+      <article class="post-card">
+        <div class="post-card-header">
+          <img class="user" src="assets/user2.jpeg"/>
+          <div class="meta">
+            <span class="handle">@kylafinnegan</span>
+            <span class="time"> 1 hour ago</span>
+          </div>
+          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- THE DEBATES GRID -->
-  <section class="section-grid">
-    <h2 class="display">The Debates</h2>
-    <p class="sub">What the room's arguing about right now</p>
-    <div class="card-grid">
-      <div class="vote-card">
-        <span class="tag">Relationships</span>
-        <span class="q">Is checking your partner's phone ever justified?</span>
-        <span class="meta">12.4k votes</span>
-      </div>
-      <div class="vote-card">
-        <span class="tag">Food</span>
-        <span class="q">Cereal before or after the milk goes in?</span>
-        <span class="meta">8.1k votes</span>
-      </div>
-      <div class="vote-card">
-        <span class="tag">Money</span>
-        <span class="q">Splitting the bill evenly vs. by what you ordered</span>
-        <span class="meta">19.7k votes</span>
-      </div>
-      <div class="vote-card featured">
-        <span class="tag">Trending</span>
-        <span class="q">Is it rude to leave a group chat on read?</span>
-        <span class="meta">31.2k votes</span>
-      </div>
-      <div class="vote-card">
-        <span class="tag">Work</span>
-        <span class="q">Should cameras stay on in every video call?</span>
-        <span class="meta">6.5k votes</span>
-      </div>
-      <div class="vote-card">
-        <span class="tag">Pets</span>
-        <span class="q">Dogs on the bed: cozy or just unsanitary?</span>
-        <span class="meta">14.0k votes</span>
-      </div>
-    </div>
-  </section>
+          
+        
+        <h4>"If it comes from my treats account, it doesn't count.</h4>
+        <p class="body-text">
+          Lowkey my best budgeting decision was making a separate account just for little treats and. . .
+        </p>
+        <span class="tag-pill">Girl Math</span>
 
-  <!-- TOPICS MARQUEE -->
-  <div class="marquee-wrap">
-    <p class="label mono">There's a side for everything</p>
-    <div class="marquee-track" id="marquee">
-      <!-- duplicated via JS for seamless loop -->
-    </div>
-  </div>
+        <div class="action-row">
+          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
+          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
+        </div>
 
-  <!-- FINAL CTA -->
-  <section class="section-final">
-    <span class="eyebrow">Your move</span>
-    <h2 class="display">Stop scrolling.<br>Start <span>voting.</span></h2>
-    <p>Thousands of debates are open right now, from the trivial to the genuinely unresolved. Download Sidebar and pick a side.</p>
-    <div class="cta-row">
-      <a href="#" class="btn">Download · iOS</a>
-      <a href="#" class="btn ghost">Download · Android</a>
-    </div>
-  </section>
+        <button class="see-replies" type="button">See replies (103) ...</button>
+      </article>
 
-  <!-- FOOTER -->
-  <footer>
-    <span class="mono">© 2026 Sidebar</span>
-    <div class="links">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Contact</a>
+      <!-- Article card -->
+      <article class="article-card">
+        <img src="assets/pink-tax.jpg" alt="">
+        <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
+        <div class="article-content">
+          <h4>The 'Pink Tax': How It's Costing Us Women TENS Of THOUSANDS of Dollars... Each!</h4>
+          <span class="read-more">Read more ↗</span>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="post-card">
+        <div class="post-card-header">
+          <img class="user" src="assets/user2.jpeg"/>
+          <div class="meta">
+            <span class="handle">@kylafinnegan</span>
+            <span class="time"> 1 hour ago</span>
+          </div>
+          <button class="icon-btn"><img src="assets/icon-savetolist.png" alt=""></button>
+        </div>
+        
+        <h4>Brands Doing It Right</h4>
+        <p class="body-text">
+          I went down a bit of a rabbit hole recently and found out that Billie was actually built around fighting the pink tax. I thought they were just known for their razors, but their whole brand is centred on fair pricing and calling out how women's products are often marked up. I've tried them myself and it's nice seeing a company actually talk about this stuff instead of pretending it doesn't exist.
+        </p>
+        <span class="tag-pill">Pink Tax</span>
+        
+        <div class="post-images">
+          <img src="assets/billie (1).png" alt="" />
+          <img src="assets/billie (2).png" alt="" />
+          <img src="assets/billie (3).png" alt="" />
+          <img src="assets/billie (4).png" alt="" />
+        </div>
+        <div class="action-row">
+          <button class="action-btn" type="button"><img src="assets/icon-heart.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-dislike.png">212</button>
+          <button class="action-btn" type="button"><img src="assets/icon-comment.png">212</button>
+          <button class="action-btn share" type="button"><img src="assets/icon-share.png"></button>
+        </div>
+        <button class="see-replies" type="button">See replies (103) ...</button>
+      </article>
+
     </div>
-  </footer>
+
+    <button class="load-more" type="button">
+      <span class="load-more-icon">⟳</span>
+      <span>Load more posts</span>
+    </button>
+  </main>
 
 </div>
-
-<script src="js/script.js">
-  
-</script>
 
 </body>
 </html>
