@@ -109,8 +109,8 @@ button {
   display: flex;
   width: 337px;
   padding: 5px;
-  position: fixed;
-  z-index: 11;
+  position: relative;
+  z-index: 999;
 }
 .nav-pill {
   flex: 1;

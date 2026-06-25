@@ -5,7 +5,13 @@ import { gsap } from "https://esm.sh/gsap";
 import { ScrollTrigger } from "https://esm.sh/gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
+ScrollTrigger.create({
+    trigger: ".nav-pills",
+    start: "top 20px",
+    end: "+=99999",        // ← change this, keeps it pinned for a very long scroll
+    pin: true,
+    pinSpacing: false,
+});
 
 const supabase = createClient(config.supabaseUrl, config.supabaseKey);
 
