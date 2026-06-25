@@ -1,6 +1,12 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js";
 import { config } from "./config.js";
 
+import { gsap } from "https://esm.sh/gsap";
+import { ScrollTrigger } from "https://esm.sh/gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 const supabase = createClient(config.supabaseUrl, config.supabaseKey);
 
 const feed = document.querySelector("#feed");
@@ -45,11 +51,30 @@ async function loadPosts() {
             </article>
         `;
     });
-}
+    gsap.utils.toArray(".post-card").forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 90%",
+            },
+            opacity: 0,
+            y: 40,
+            duration: 0.5,
+            delay: i * 0.05,
+            ease: "power2.out",
+        });
+      
+    
+    
+    
+
 
 window.openPost = function(id) {
     localStorage.setItem("selectedPostId", id);
     window.location.href = "post.html";
 }
+
+    });
+  }
 
 loadPosts();
