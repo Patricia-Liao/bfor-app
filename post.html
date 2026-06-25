@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    
+<script type="module" src="js/post.js"></script>
+</head>
+<body>
+
+<div class="app">
+
+    <div class="detail-bg">
+
+        <button class="go-back" onclick="window.location.href='app-demo.html'">← Go back</button>
+
+        <article class="post-card detail-post-card">
+            <div class="post-card-header">
+                <img class="user" src="assets/user1.jpeg" />
+                <div class="meta">
+                    <!-- id= tells post.js exactly where to put the text -->
+                    <span class="handle" id="post-author"></span>
+                    <span class="time"   id="post-time"></span>
+                </div>
+                <button class="icon-btn">
+                    <img src="assets/icon-savetolist.png" />
+                </button>
+            </div>
+
+            <h4 class="post-title" id="post-title"></h4>
+            <p  class="body-text"  id="post-body"></p>
+            <span class="tag-pill" id="post-tag"></span>
+
+            <div class="action-row">
+                <button class="action-btn"><img src="assets/icon-heart.png">212</button>
+                <button class="action-btn"><img src="assets/icon-dislike.png">0</button>
+                <button class="action-btn"><img src="assets/icon-comment.png">103</button>
+                <button class="action-btn share"><img src="assets/icon-share.png"></button>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="reply-bar">
+        <img class="user" src="assets/maya.jpeg" />
+        <input type="text" id="reply-placeholder" placeholder="Reply to post…" />
+    </div>
+
+</div>
+
+</body>
+</html>
