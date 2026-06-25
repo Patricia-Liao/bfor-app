@@ -177,6 +177,7 @@ button {
   background-color: var(--graygreen);
   border-radius: var(--radius-lg);
   padding: 20px;
+  margin: 20px;
   
 }
 .post-card-header {
