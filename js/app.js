@@ -29,7 +29,7 @@ async function loadPosts() {
         feed.innerHTML += `
             <article class="post-card" onclick="openPost('${post.id}')">
                 <div class="post-card-header">
-                    <img class="user" src="assets/user1.jpeg" />
+                    <img class="user" src="assets/user-1.png" />
                     <div class="meta">
                         <span class="handle">@${post.author_name}</span>
                         <span class="time">${post.time_label}</span>
